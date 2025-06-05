@@ -1,14 +1,19 @@
+import java.util.Scanner;
+
 public class ComparacionCadenas {
 
     public static void main (String[] args){
-    
-        String texto1 = "kevin";
-String texto2 = "Kevin";
+    Scanner scanner = new Scanner (System.in);
 
-boolean iguales = texto1.equals(texto2);
-boolean ignoraMayus = texto1.equalsIgnoreCase(texto2);
+    System.out.print ("Escriba una palabra: ");
+    String cadena1 = scanner.nextLine();
 
-System.out.println(iguales);  
-System.out.println(ignoraMayus);  
+    System.out.print ("Escriba otra palabra (igual o distinta): ");
+    String cadena2 = scanner.nextLine();
+
+boolean iguales = cadena1.equals(cadena2);
+
+
+System.out.println("Las palabras son iguales?: " + iguales);  
     }
 }

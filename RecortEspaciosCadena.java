@@ -1,9 +1,17 @@
-public class RecortEspaciosCadena{
+import java.util.Scanner;
 
-    public static void main (String[] args){
+public class RecortEspaciosCadena {
 
-        String texto = "                      Hermosa mañana verdad                 ";
-String textoRecortado = texto.trim();
-System.out.println("[" + textoRecortado + "]");
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+
+        System.out.print("Escriba una palabra: ");
+        String texto = scanner.nextLine();
+
+        String textoRecortado = texto.trim();
+        System.out.println("[" + textoRecortado + "]");
+
+        scanner.close();
+    }
 }
-}
+  
